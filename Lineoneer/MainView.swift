@@ -6,10 +6,28 @@
 //
 
 import SwiftUI
+import UIKit
+import GoogleMaps
 
 struct MainView: View {
     var body: some View {
-        Text("Main View")
+        ZStack {
+            GoogleMapsView()
+                .edgesIgnoringSafeArea(.top)
+            VStack {
+                Spacer()
+                Button(action: {
+                    print("pressed")
+                }) {
+                    ZStack{
+                       Circle()
+                       .frame(width: 100, height: 100)
+                       .foregroundColor(.yellow)
+                       Text("Press me")
+                   }.frame(width: 300, height: 50)
+                }.padding(.bottom, 60)
+            }
+        }
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0E5B999803A65336CBFB06 /* Pods_LineoneerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AE4762805AC4D6D64C9272 /* Pods_LineoneerTests.framework */; };
+		5F0E4355A87B982057873C2F /* Pods_Lineoneer_LineoneerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D60200B6A0DF5752DD9FB9C /* Pods_Lineoneer_LineoneerUITests.framework */; };
 		6D0D93D82612D614002B3E7F /* LineoneerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D93D72612D614002B3E7F /* LineoneerApp.swift */; };
 		6D0D93DA2612D614002B3E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D93D92612D614002B3E7F /* ContentView.swift */; };
 		6D0D93DC2612D616002B3E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D93DB2612D616002B3E7F /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		6D0D94482612DC5E002B3E7F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D94472612DC5E002B3E7F /* MainView.swift */; };
 		6D0D944D2612E13F002B3E7F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D944C2612E13F002B3E7F /* LoginView.swift */; };
 		6D0D94522612E226002B3E7F /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D94512612E226002B3E7F /* ViewRouter.swift */; };
+		C892C09A66324447FD5A38EA /* Pods_Lineoneer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D36873B7A0C58A37B4EF362 /* Pods_Lineoneer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D36873B7A0C58A37B4EF362 /* Pods_Lineoneer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lineoneer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AE4762805AC4D6D64C9272 /* Pods_LineoneerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineoneerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4837B685DF9F7D573ACEC16A /* Pods-Lineoneer-LineoneerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer-LineoneerUITests.release.xcconfig"; path = "Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D60200B6A0DF5752DD9FB9C /* Pods_Lineoneer_LineoneerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lineoneer_LineoneerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A9466FCC46C0FEC8683EFC /* Pods-Lineoneer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer.debug.xcconfig"; path = "Target Support Files/Pods-Lineoneer/Pods-Lineoneer.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0D93D42612D614002B3E7F /* Lineoneer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lineoneer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0D93D72612D614002B3E7F /* LineoneerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineoneerApp.swift; sourceTree = "<group>"; };
 		6D0D93D92612D614002B3E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		6D0D94472612DC5E002B3E7F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6D0D944C2612E13F002B3E7F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6D0D94512612E226002B3E7F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7E98510AD518E1AD6B1D1FDE /* Pods-LineoneerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineoneerTests.release.xcconfig"; path = "Target Support Files/Pods-LineoneerTests/Pods-LineoneerTests.release.xcconfig"; sourceTree = "<group>"; };
+		81B57A1449829D11E5CF5CFD /* Pods-LineoneerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineoneerTests.debug.xcconfig"; path = "Target Support Files/Pods-LineoneerTests/Pods-LineoneerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA1B95EE6C440BF5716546A4 /* Pods-Lineoneer-LineoneerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer-LineoneerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4502B0C7DCB5326DC6FE4E1 /* Pods-Lineoneer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer.release.xcconfig"; path = "Target Support Files/Pods-Lineoneer/Pods-Lineoneer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C892C09A66324447FD5A38EA /* Pods_Lineoneer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0E5B999803A65336CBFB06 /* Pods_LineoneerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0E4355A87B982057873C2F /* Pods_Lineoneer_LineoneerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				6D0D93E82612D616002B3E7F /* LineoneerTests */,
 				6D0D93F32612D616002B3E7F /* LineoneerUITests */,
 				6D0D93D52612D614002B3E7F /* Products */,
+				AADCAA14FEA8B775ECE03023 /* Pods */,
+				F41EA6CE1B26A41D2BE39B68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,30 @@
 			path = LineoneerUITests;
 			sourceTree = "<group>";
 		};
+		AADCAA14FEA8B775ECE03023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50A9466FCC46C0FEC8683EFC /* Pods-Lineoneer.debug.xcconfig */,
+				E4502B0C7DCB5326DC6FE4E1 /* Pods-Lineoneer.release.xcconfig */,
+				BA1B95EE6C440BF5716546A4 /* Pods-Lineoneer-LineoneerUITests.debug.xcconfig */,
+				4837B685DF9F7D573ACEC16A /* Pods-Lineoneer-LineoneerUITests.release.xcconfig */,
+				81B57A1449829D11E5CF5CFD /* Pods-LineoneerTests.debug.xcconfig */,
+				7E98510AD518E1AD6B1D1FDE /* Pods-LineoneerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F41EA6CE1B26A41D2BE39B68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D36873B7A0C58A37B4EF362 /* Pods_Lineoneer.framework */,
+				4D60200B6A0DF5752DD9FB9C /* Pods_Lineoneer_LineoneerUITests.framework */,
+				42AE4762805AC4D6D64C9272 /* Pods_LineoneerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0D93F92612D616002B3E7F /* Build configuration list for PBXNativeTarget "Lineoneer" */;
 			buildPhases = (
+				7ACBF8CE10872EDE063DFABB /* [CP] Check Pods Manifest.lock */,
 				6D0D93D02612D614002B3E7F /* Sources */,
 				6D0D93D12612D614002B3E7F /* Frameworks */,
 				6D0D93D22612D614002B3E7F /* Resources */,
+				0679EBB0018B3C4D0185965E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0D93FC2612D616002B3E7F /* Build configuration list for PBXNativeTarget "LineoneerTests" */;
 			buildPhases = (
+				86C08A07A86E8B4D839BB16B /* [CP] Check Pods Manifest.lock */,
 				6D0D93E12612D616002B3E7F /* Sources */,
 				6D0D93E22612D616002B3E7F /* Frameworks */,
 				6D0D93E32612D616002B3E7F /* Resources */,
@@ -181,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0D93FF2612D616002B3E7F /* Build configuration list for PBXNativeTarget "LineoneerUITests" */;
 			buildPhases = (
+				87B66A8867612A4734A1CC10 /* [CP] Check Pods Manifest.lock */,
 				6D0D93EC2612D616002B3E7F /* Sources */,
 				6D0D93ED2612D616002B3E7F /* Frameworks */,
 				6D0D93EE2612D616002B3E7F /* Resources */,
+				164F7509FC5194ECA5E86DDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +308,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0679EBB0018B3C4D0185965E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lineoneer/Pods-Lineoneer-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lineoneer/Pods-Lineoneer-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lineoneer/Pods-Lineoneer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		164F7509FC5194ECA5E86DDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACBF8CE10872EDE063DFABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lineoneer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C08A07A86E8B4D839BB16B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LineoneerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B66A8867612A4734A1CC10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lineoneer-LineoneerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D0D93D02612D614002B3E7F /* Sources */ = {
@@ -426,6 +575,7 @@
 		};
 		6D0D93FA2612D616002B3E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50A9466FCC46C0FEC8683EFC /* Pods-Lineoneer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +598,7 @@
 		};
 		6D0D93FB2612D616002B3E7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4502B0C7DCB5326DC6FE4E1 /* Pods-Lineoneer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,6 +621,7 @@
 		};
 		6D0D93FD2612D616002B3E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B57A1449829D11E5CF5CFD /* Pods-LineoneerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +644,7 @@
 		};
 		6D0D93FE2612D616002B3E7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E98510AD518E1AD6B1D1FDE /* Pods-LineoneerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +667,7 @@
 		};
 		6D0D94002612D616002B3E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1B95EE6C440BF5716546A4 /* Pods-Lineoneer-LineoneerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +688,7 @@
 		};
 		6D0D94012612D616002B3E7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4837B685DF9F7D573ACEC16A /* Pods-Lineoneer-LineoneerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
