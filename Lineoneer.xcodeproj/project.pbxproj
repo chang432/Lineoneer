@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3B0E5B999803A65336CBFB06 /* Pods_LineoneerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AE4762805AC4D6D64C9272 /* Pods_LineoneerTests.framework */; };
 		5F0E4355A87B982057873C2F /* Pods_Lineoneer_LineoneerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D60200B6A0DF5752DD9FB9C /* Pods_Lineoneer_LineoneerUITests.framework */; };
 		6D0D93D82612D614002B3E7F /* LineoneerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D93D72612D614002B3E7F /* LineoneerApp.swift */; };
-		6D0D93DA2612D614002B3E7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D93D92612D614002B3E7F /* ContentView.swift */; };
 		6D0D93DC2612D616002B3E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D93DB2612D616002B3E7F /* Assets.xcassets */; };
 		6D0D93DF2612D616002B3E7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0D93DE2612D616002B3E7F /* Preview Assets.xcassets */; };
 		6D0D93EA2612D616002B3E7F /* LineoneerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D93E92612D616002B3E7F /* LineoneerTests.swift */; };
@@ -18,6 +17,9 @@
 		6D0D94482612DC5E002B3E7F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D94472612DC5E002B3E7F /* MainView.swift */; };
 		6D0D944D2612E13F002B3E7F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D944C2612E13F002B3E7F /* LoginView.swift */; };
 		6D0D94522612E226002B3E7F /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0D94512612E226002B3E7F /* ViewRouter.swift */; };
+		6DE087F7261D6CB1007BA43F /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE087F6261D6CB1007BA43F /* MotherView.swift */; };
+		6DE087FC261D6CBD007BA43F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE087FB261D6CBD007BA43F /* LocationManager.swift */; };
+		6DE08801261D6CC7007BA43F /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE08800261D6CC7007BA43F /* GoogleMapsView.swift */; };
 		C892C09A66324447FD5A38EA /* Pods_Lineoneer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D36873B7A0C58A37B4EF362 /* Pods_Lineoneer.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +48,6 @@
 		50A9466FCC46C0FEC8683EFC /* Pods-Lineoneer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer.debug.xcconfig"; path = "Target Support Files/Pods-Lineoneer/Pods-Lineoneer.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0D93D42612D614002B3E7F /* Lineoneer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lineoneer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0D93D72612D614002B3E7F /* LineoneerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineoneerApp.swift; sourceTree = "<group>"; };
-		6D0D93D92612D614002B3E7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D0D93DB2612D616002B3E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D0D93DE2612D616002B3E7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D0D93E02612D616002B3E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +60,9 @@
 		6D0D94472612DC5E002B3E7F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6D0D944C2612E13F002B3E7F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6D0D94512612E226002B3E7F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		6DE087F6261D6CB1007BA43F /* MotherView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		6DE087FB261D6CBD007BA43F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6DE08800261D6CC7007BA43F /* GoogleMapsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
 		7E98510AD518E1AD6B1D1FDE /* Pods-LineoneerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineoneerTests.release.xcconfig"; path = "Target Support Files/Pods-LineoneerTests/Pods-LineoneerTests.release.xcconfig"; sourceTree = "<group>"; };
 		81B57A1449829D11E5CF5CFD /* Pods-LineoneerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineoneerTests.debug.xcconfig"; path = "Target Support Files/Pods-LineoneerTests/Pods-LineoneerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA1B95EE6C440BF5716546A4 /* Pods-Lineoneer-LineoneerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lineoneer-LineoneerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lineoneer-LineoneerUITests/Pods-Lineoneer-LineoneerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				6D0D93D72612D614002B3E7F /* LineoneerApp.swift */,
-				6D0D93D92612D614002B3E7F /* ContentView.swift */,
+				6DE08800261D6CC7007BA43F /* GoogleMapsView.swift */,
+				6DE087FB261D6CBD007BA43F /* LocationManager.swift */,
+				6DE087F6261D6CB1007BA43F /* MotherView.swift */,
 				6D0D94512612E226002B3E7F /* ViewRouter.swift */,
 				6D0D944C2612E13F002B3E7F /* LoginView.swift */,
 				6D0D94472612DC5E002B3E7F /* MainView.swift */,
@@ -166,7 +172,6 @@
 				81B57A1449829D11E5CF5CFD /* Pods-LineoneerTests.debug.xcconfig */,
 				7E98510AD518E1AD6B1D1FDE /* Pods-LineoneerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -417,8 +422,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE08801261D6CC7007BA43F /* GoogleMapsView.swift in Sources */,
 				6D0D94522612E226002B3E7F /* ViewRouter.swift in Sources */,
-				6D0D93DA2612D614002B3E7F /* ContentView.swift in Sources */,
+				6DE087F7261D6CB1007BA43F /* MotherView.swift in Sources */,
+				6DE087FC261D6CBD007BA43F /* LocationManager.swift in Sources */,
 				6D0D94482612DC5E002B3E7F /* MainView.swift in Sources */,
 				6D0D944D2612E13F002B3E7F /* LoginView.swift in Sources */,
 				6D0D93D82612D614002B3E7F /* LineoneerApp.swift in Sources */,
