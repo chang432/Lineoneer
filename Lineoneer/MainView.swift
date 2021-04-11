@@ -17,7 +17,7 @@ struct MainView: View {
             VStack {
                 Spacer()
                 Button(action: {
-                    print("pressed")
+                    GoogleMapsView().path.map.clear()
                 }) {
                     ZStack{
                        Circle()
