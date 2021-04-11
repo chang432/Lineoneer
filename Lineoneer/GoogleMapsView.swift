@@ -11,6 +11,8 @@ import GoogleMaps
 
 
 struct GoogleMapsView: UIViewRepresentable {
+    @EnvironmentObject var gmapsRouter: GoogleMapsRouter
+    
     // 1
     @ObservedObject var locationManager = LocationManager()
     private let zoom: Float = 15.0
@@ -31,12 +33,16 @@ struct GoogleMapsView: UIViewRepresentable {
     
     // 3
     func updateUIView(_ mapView: GMSMapView, context: Context) {
-        // draw trail
-        path.add(CLLocationCoordinate2D(latitude: locationManager.latitude, longitude: locationManager.longitude))
-        let polyline = GMSPolyline(path: path)
-        polyline.map = mapView
-        
-        print(path)
+        if gmapsRouter.showLine == false {
+            mapView.clear()
+        } else {
+            // draw trail
+            path.add(CLLocationCoordinate2D(latitude: locationManager.latitude, longitude: locationManager.longitude))
+            let polyline = GMSPolyline(path: path)
+            polyline.map = mapView
+            
+            print(path)
+        }
     }
     
     

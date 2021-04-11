@@ -10,14 +10,18 @@ import UIKit
 import GoogleMaps
 
 struct MainView: View {
+    @StateObject var gmapsRouter = GoogleMapsRouter()
+    
     var body: some View {
         ZStack {
             GoogleMapsView()
                 .edgesIgnoringSafeArea(.top)
+                .environmentObject(gmapsRouter)
             VStack {
                 Spacer()
                 Button(action: {
-                    GoogleMapsView().path.map.clear()
+                    //GoogleMapsView().path.map.clear()
+                    self.gmapsRouter.showLine = false
                 }) {
                     ZStack{
                        Circle()
