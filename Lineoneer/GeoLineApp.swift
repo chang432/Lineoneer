@@ -1,8 +1,8 @@
 //
-//  LineoneerApp.swift
-//  Lineoneer
+//  GeoLine.swift
+//  GeoLine
 //
-//  Created by Andre Chang on 3/29/21.
+//  Created by Ting-Han Tarn on 4/18/21.
 //
 
 import SwiftUI
@@ -17,13 +17,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 @main
-struct LineoneerApp: App {
+struct GeoLineApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @StateObject var viewRouter = ViewRouter()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(viewRouter)
+            ContentView()
         }
     }
 }
