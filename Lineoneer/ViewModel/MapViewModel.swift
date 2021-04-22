@@ -7,6 +7,8 @@ import CoreLocation
 class MapViewModel: NSObject,ObservableObject,CLLocationManagerDelegate{
     
     private let zoom: Float = 15.0
+    
+    @Published var location = CLLocation()
    
     @Published var mapView = GMSMapView()
    
@@ -20,11 +22,22 @@ class MapViewModel: NSObject,ObservableObject,CLLocationManagerDelegate{
     // Map Type...
     @Published var mapType : GMSMapViewType = GMSMapViewType.normal
    
-    // SearchText...
-    @Published var searchTxt = ""
-   
     // Searched Places...
     @Published var places : [Place] = []
+    
+    // markers for line
+    @Published var startMarker = GMSMarker()
+    @Published var endMarker = GMSMarker()
+    
+    // store planned line
+    var planPath = GMSMutablePath()
+    @Published var planLine = GMSPolyline()
+    
+    // store actual route
+    @Published var trackingRoute = false
+    var routePath = GMSMutablePath()
+    @Published var routeLine = GMSPolyline()
+    
    
     // Updating Map Type...
    
@@ -39,14 +52,52 @@ class MapViewModel: NSObject,ObservableObject,CLLocationManagerDelegate{
             mapView.mapType = mapType
         }
     }
+    
+    func drawLine(){
+        planPath.add(startMarker.position)
+        planPath.add(endMarker.position)
+        planLine.path = planPath
+        planLine.map = mapView
+        
+        // animate camera to fit line on screen
+        var bounds = GMSCoordinateBounds()
+
+        for index in 0...planPath.count() {
+            bounds = bounds.includingCoordinate(planPath.coordinate(at: index))
+        }
+        
+        // if bounds is taller than it is wide, pad space at top by x%
+        let height = abs(bounds.northEast.latitude - bounds.southWest.latitude)
+        let width = abs(bounds.northEast.longitude - bounds.southWest.longitude)
+        if height > width {
+            var upperPoint = mapView.projection.point(for: bounds.northEast)
+            upperPoint.y = upperPoint.y * 0.9
+            let upperCoord = mapView.projection.coordinate(for: upperPoint)
+            
+            var lowerPoint = mapView.projection.point(for: bounds.southWest)
+            lowerPoint.y = lowerPoint.y * 1.2
+            let lowerCoord = mapView.projection.coordinate(for: lowerPoint)
+            
+            bounds = GMSCoordinateBounds.init(coordinate: upperCoord, coordinate: lowerCoord)
+        }
+
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(CFTimeInterval(1.5))
+        self.mapView.animate(with: GMSCameraUpdate.fit(bounds))
+        // what to do when animation complete
+//        CATransaction.setCompletionBlock {
+//        }
+        CATransaction.commit()
+    }
    
     // Focus Location...
    
     func focusLocation(){
-       
-        guard let _ = camera else{return}
-       
+        
+        print("focusing location")
+        let camera = GMSCameraPosition(latitude: self.location.coordinate.latitude, longitude: self.location.coordinate.longitude, zoom: self.zoom)
         mapView.camera = camera
+        
     }
    
     // Search Places...
@@ -126,15 +177,20 @@ class MapViewModel: NSObject,ObservableObject,CLLocationManagerDelegate{
    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
        
-        guard let location = locations.last else{return}
-       
-        self.camera = GMSCameraPosition(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, zoom: self.zoom)
-       
-        // Updating Map....
-        self.mapView.animate(to: self.camera)
-       
-        // Smooth Animations...
-//        self.mapView.setVisibleMapRect(self.mapView.visibleMapRect, animated: true)
+//        guard let location = locations.last else{return}
+        if locations.last == nil {
+            return
+        } else {
+            self.location = locations.last!
+            print("updating location")
+        }
+        
+        // tracking route
+        if self.trackingRoute {
+            self.routePath.add(self.location.coordinate)
+            self.routeLine.path = routePath
+            self.routeLine.map = self.mapView
+        }
     }
 }
 
