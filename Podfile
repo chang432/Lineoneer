@@ -7,6 +7,9 @@ target 'Lineoneer' do
 
   # Pods for Lineoneer
   pod 'GoogleMaps'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
   target 'LineoneerTests' do
     inherit! :search_paths

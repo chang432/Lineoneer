@@ -7,10 +7,12 @@
 
 import SwiftUI
 import GoogleMaps
+import Firebase
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         print("App has launched")
+        FirebaseApp.configure()
         GMSServices.provideAPIKey("AIzaSyBZwOAFTO81OZaU9g0fE1wvBruRpt0dX28")
         return true
     }
@@ -22,7 +24,7 @@ struct GeoLineApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
         }
     }
 }
